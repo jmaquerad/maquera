@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html">
+    <jsp:output omit-xml-declaration="true" doctype-root-element="HTML"
+                doctype-system="http://www.oracle.com/jdeveloper/html5.dtd" doctype-public="-//DTD HTML5 //EN"/>
+    <jsp:directive.page contentType="text/html;charset=windows-1252"/>
+    <f:view>
+        <html>
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+                <title>Pagina1</title>
+            </head>
+            <body>
+                <h:form>
+                    <h:commandButton value="Click AQUI" style="background-color:Orange;"/>
+                    <h:inputText value="#{alumno.SNombre}"
+                                 style="color:Red; text-align:center; font-style:italic; font-size:large;"/>
+                    <h:inputText value="#{alumno.SApellido}" style="color:Red; text-align:center;"/>
+                    <h:inputText value="#{alumno.SFechadenacimiento}" style="color:Navy; text-align:center;"/>
+                    <h:inputText value="#{alumno.scodigo}" style="color:Red; text-align:center;"/>
+                    <h:inputText value="#{alumno.ssexo}" style="color:Teal; font-style:italic; text-align:center;"/>
+                </h:form>
+            </body>
+        </html>
+    </f:view>
+</jsp:root>
